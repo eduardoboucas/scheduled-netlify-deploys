@@ -1,7 +1,5 @@
 import { env } from "process";
-
-import { schedule, Handler } from "@netlify/functions";
-
+import { schedule } from "@netlify/functions";
 import axios from "axios";
 
 export const handler = schedule("@hourly", async () => {
