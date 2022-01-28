@@ -1,0 +1,2 @@
+[template.environment]
+BUILD_HOOK_URL = "Set the URL of a Netlify Build Hook"
