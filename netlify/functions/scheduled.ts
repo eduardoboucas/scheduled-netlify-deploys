@@ -22,4 +22,4 @@ const func: Handler = async () => {
   };
 };
 
-export const handler = schedule("* * * * *", func);
+export const handler = schedule("0 * * * *", func);
