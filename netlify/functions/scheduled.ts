@@ -1,6 +1,6 @@
 import { schedule, Handler } from "@netlify/functions";
 
-const func: Handler = (event) => {
+const func: Handler = () => {
   console.log("Hello, world!");
 
   return {
