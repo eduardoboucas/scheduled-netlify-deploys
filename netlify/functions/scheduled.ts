@@ -4,7 +4,7 @@ import { schedule, Handler } from "@netlify/functions";
 
 import axios from "axios";
 
-const func: Handler = async () => {
+export const handler = schedule("@hourly", async () => {
   const buildUrl = env.BUILD_HOOK_URL;
 
   if (buildUrl === undefined) {
@@ -20,6 +20,4 @@ const func: Handler = async () => {
   return {
     statusCode: 200,
   };
-};
-
-export const handler = schedule("@hourly", func);
+});
